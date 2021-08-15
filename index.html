@@ -1,0 +1,249 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Portfolio Website</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+
+        <!--Using Font Awesome-->
+        <script src="https://kit.fontawesome.com/c8e4d183c2.js"
+        crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+
+        <section>
+
+            <!---navigation-->
+            <nav>
+
+                <!--logo-->
+                <a href="#" class="logo">Radhika Ajay Shirke</a>
+
+                <!--menu-->
+                <ul>
+                    <li><a href="#" class="active">Home</a></li>
+                    <li><a href="#about-me">About</a></li>
+                    <li><a href="#education">Education</a></li>
+                    <li><a href="#achievments">Achievments</a></li>
+                    <li><a href="#contact-me">Contact me</a></li>
+                </ul>
+
+            </nav>
+
+
+            <!--text-->
+            <div class="text-container">
+                <p>Hello,</p>
+                <p>I'm Radhika</p>
+                <p>I am Full Stack Developer</p>
+                <a href="mailto:radhikashirke9404@gmail.com">
+                    <button class="hire-btn">Hire me</button>
+                </a>
+                
+                <a href="resume.pdf" download="Download CV" target="_blank">
+                    <button class="down-cv">Download CV</button>
+                </a>
+                
+            </div>
+
+            <!--model-->
+            <img src="model.jpg" class="model" alt="model">
+    
+        </section>
+
+        <!---about section------->
+        <div id="about-me" class="about-container">
+
+            
+
+            <!--about text------->
+            <div class="about-text">
+                <p>About Me</p>
+                <p>Full Stack Developer</p>
+                <p>Aggressive problem solver, dedicated to producing result, passionate Website Developer</p>
+                <p>I am a Computer Engineer with keen interest in domains like Web Development, Android Development and Cloud
+                    Computing. My creative web designs and coding have become a perfect union of my two passsions. 
+                    Being a natural leader and a team player, I like to find unique solutions to complex problems. 
+                </p>
+
+            </div>
+
+        </div>
+
+        <div id="education" class="education-container">
+
+            
+
+            <!--education text------->
+            <div class="education-text">
+                <h1>Education</h1>
+                <ul>
+                    <h3>Zeal College of Engineering and Research</h3>
+                    <p>Computer Engineering</p>
+                    <p>2019-2023</p>
+                    <p>CGPA : 9.39</p>
+                </ul>
+                <ul>
+                    <h3>Department of Foreign Language SPPU</h3>
+                    <p>Intensive Certificate Course in German</p>
+                    <p>Feb 2021- May 2021</p>
+                    <p>Grade : A</p>
+                </ul>
+                <ul>
+                    <h3>Abasaheb Garware College of Arts and Science</h3>
+                    <p>XII th</p>
+                    <p>2017-2019</p>
+                    <p>Percentage : 74%</p>
+                </ul>
+
+            </div>
+
+        </div>
+
+        <!--Achievments-->
+        <div id="achievments" class="achievments">
+            <div class="achievments-text">
+                <p>Achievments</p>
+            </div>
+
+            <!----box------------->
+            <div class="box-container"> 
+                <div class="box-1">
+                    
+                    <p class="heading">Academics</p>
+                    <!--<span>1</span>-->
+                    <span id="dots">...</span><span id="more">
+                        <p class="details">
+                            <ul> Responsive Website Basics & Design</ul>
+                            <ul> Goldman Sachs: Engineering Virtual Program</ul>
+                            <ul> Problem Solving Basics: Hackerrank</ul>
+                            <ul> IIT Bombay Spoken Tutorial C test (92.5%)</ul> 
+                        </p>
+                    </span>
+                    <button onclick="myFunction()" id="myBtn">Read More</button>
+
+                    <script>
+                        function myFunction() {
+                        var dots = document.getElementById("dots");
+                        var moreText = document.getElementById("more");
+                        var btnText = document.getElementById("myBtn");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more"; 
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less"; 
+                            moreText.style.display = "inline";
+                        }
+                        }
+                    </script>
+
+                </div>
+
+
+                <div class="box-2">
+                    <p class="heading">Competitions</p>
+                    <!---<span>2</span>--->
+                    <span id="dots2">...</span><span id="more2">
+                    <p class="details">
+                        <ul> Myntra Hackerramp We for She</ul>
+                        <ul> Codechef 2 star</ul>
+                        <ul> Hackerrank 5 star</ul>
+                        <ul> Capgemini Tech Challange</ul>
+                        <ul>Flipkart Runway</ul> 
+                    </p>
+                    </span>
+                    <button onclick="myFunction2()" id="myBtn2">Read More</button>
+
+                    <script>
+                        function myFunction2() {
+                        var dots = document.getElementById("dots2");
+                        var moreText = document.getElementById("more2");
+                        var btnText = document.getElementById("myBtn2");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more"; 
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less"; 
+                            moreText.style.display = "inline";
+                        }
+                        }
+                    </script>
+
+                </div>
+                <div class="box-3">
+                    <p class="heading">Extra Curricular</p>
+                    <!--<span>3</span>--->
+                    <span id="dots3">...</span><span id="more3">
+                    <p class="details">
+                        <ul> German Language Certificate Course</ul>
+                        <ul> Worked at All India Radio</ul>
+                        <ul> Member at Sanvad Debate Union </ul> 
+                    </p>
+                    </span>
+                    <button onclick="myFunction3()" id="myBtn3">Read More</button>
+                    <script>
+                        function myFunction3() {
+                        var dots = document.getElementById("dots3");
+                        var moreText = document.getElementById("more3");
+                        var btnText = document.getElementById("myBtn3");
+
+                        if (dots.style.display === "none") {
+                            dots.style.display = "inline";
+                            btnText.innerHTML = "Read more"; 
+                            moreText.style.display = "none";
+                        } else {
+                            dots.style.display = "none";
+                            btnText.innerHTML = "Read less"; 
+                            moreText.style.display = "inline";
+                        }
+                        }
+                    </script>
+
+
+                </div>
+            </div>
+            
+        </div>
+
+        <!---Contact Me----------->
+        <div id="contact-me" class="contact-me">
+            <h1>Contact Me</h1>
+            <p>radhikashirke9404@gmail.com</p>
+            <p>91+ 9404378223</p>
+            
+        </div>
+
+        <!---Footer----------->
+        <footer>
+            <p>Connect With Me</p>
+
+            <!--social media------------>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="http://www.linkedin.com/in/radhika-shirke" target="_blank"><i class="fab fa-LinkedIn"></i></a>
+            </div>
+
+            <!--Copyright---------->
+            <!---<p class="copyright">Copyright by Radhika Ajay Shirke</p>--->
+        </footer>
+
+        <!--Attached social bar-->
+        <!--social media------------>
+        <div class="a-social-b">
+            <a href="#"><i class="fab fa-facebook-f"></i></a>
+            <a href="#"><i class="fab fa-instagram"></i></a>
+            <a href="#"><i class="fab fa-github"></i></a>
+            <a href="http://www.linkedin.com/in/radhika-shirke" target="_blank"><i class="fab fa-LinkedIn"></i></a>
+        </div>
+
+    </body>
+
+</html>
